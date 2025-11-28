@@ -1,0 +1,9 @@
+flask
+groq
+langchain-community
+sentence-transformers
+faiss-cpu
+python-dotenv
+pypdf
+langchain-text-splitters
+

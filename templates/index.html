@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Technov8</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script defer src="{{ url_for('static', filename='chat.js') }}"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo"><strong>Technov8</strong></div>
+      <nav>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+      </nav>
+  </header>
+
+  <section class="hero fade-in">
+    <h1>Transform Your Business<br>with Innovation</h1>
+  <p>Harness cutting-edge technology to drive growth, streamline operations, and create exceptional digital experiences</p>
+  <div class="hero-buttons">
+    <button class="primary-btn">Get Started</button>
+    <button class="outline-btn">Explore Services</button>
+  </div>
+</section>
+
+<section class="services-section fade-in">
+  <h2>Our Services</h2>
+  <div class="services-container">
+    <div class="service-card web-dev">
+      <h3>Web Development</h3>
+      <p>Build fast, scalable web applications using modern frameworks and best practices.</p>
+    </div>
+    <div class="service-card ai-sol">
+      <h3>AI Solutions</h3>
+      <p>Leverage artificial intelligence to automate processes and unlock insights.</p>
+    </div>
+    <div class="service-card digital">
+      <h3>Digital Strategy</h3>
+      <p>Strategic consulting to align technology with your business goals.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta fade-in">
+  <h2>Ready to Innovate?</h2>
+  <p>Let's work together to transform your vision into reality</p>
+  <button>Start Your Project</button>
+</section>
+
+<footer>
+  <div>
+    <strong>Technov8</strong>
+    <p>Transforming businesses through innovative technology solutions.</p>
+  </div>
+  <div>
+    <strong>Services</strong>
+    <p>Web Development<br>AI Solutions<br>Mobile Apps</p>
+  </div>
+  <div>
+    <strong>Company</strong>
+    <p>About<br>Portfolio<br>Contact</p>
+  </div>
+  <div>
+    <strong>Connect</strong>
+    <p>LinkedIn<br>Twitter<br>GitHub</p>
+  </div>
+</footer>
+
+
+<!-- Floating Chatbot Button -->
+<div class="chatbot-btn" onclick="toggleChat()">
+  💬
+</div>
+
+<!-- Chatbot Window -->
+<div class="chat-window" id="chatWindow">
+  <div class="chat-header">Technov8 Assistant<br><small>Ask us anything</small></div>
+
+  <div class="chat-body" id="chatBody">
+    <div class="bot-msg">Hi! I'm Irla, Technov8’s AI assistant. How can I help you today?</div>
+  </div>
+
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Type your question...">
+    <button class="send-btn" onclick="sendMessage()">➤</button>
+  </div>
+</div>
+
+</body>
+</html>
