@@ -14,10 +14,6 @@ app = Flask(__name__)
 # 1. Groq Setup
 # -----------------------------
 groq_api_key = os.getenv("GROQ_API_KEY")
-print(f"API Key loaded: {'YES' if groq_api_key else 'NO'}")  # Will show NO currently
-print(f"Full key preview: {groq_api_key[:10] if groq_api_key else 'None'}...")
-if not groq_api_key:
-    raise ValueError("GROQ_API_KEY not found! Check .env file.")
 
 client = Groq(api_key=groq_api_key)
 
