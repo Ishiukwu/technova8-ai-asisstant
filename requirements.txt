@@ -6,4 +6,4 @@ faiss-cpu
 python-dotenv
 pypdf
 langchain-text-splitters
-
+gunicorn
